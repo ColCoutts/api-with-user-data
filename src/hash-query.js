@@ -17,7 +17,7 @@ export function readFromQuery(existingQuery){
     const url = new URLSearchParams(existingQuery);
     const queryOptions = {
         searchTerm: url.get('searchTerm'),
-        page: Number(url.get('page'))
+        page: Number(url.get('page')),
     };
 
     return queryOptions;
