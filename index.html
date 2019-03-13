@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./src/index.css">
+    <title>NEWS!</title>
+</head>
+<body>
+    <header>
+        <section id="header-container">
+            <h1>Culture Vulture</h1>
+            <form id="form">
+                <input type="text" id="search" placeholder="search here">
+                <button>SEARCH</button>
+            </form>
+        </section>
+        <section id="paging-buttons-container">
+            <button id="previous-button">Previous</button>
+            <p>Page <span id="current-page">1</span> of <span id="total-pages">100</span></p>
+            <button id="next-button">Next</button>
+        </section>
+    </header>
+    <main>
+        <section id="results-container">
+            <ul id="news-list"></ul>
+        </section>
+    </main>
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
