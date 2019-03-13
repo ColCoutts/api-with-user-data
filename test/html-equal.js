@@ -8,6 +8,7 @@ function normalize(str) {
 }
 
 QUnit.assert.htmlEqual = function(fragment, expected) {
+    console.log('!!!!!!!!!!!!!!!!!!!', fragment);
     if(fragment.children.length > 1) {
         throw new TemplateError('Templates must only have single top-level element');
     }
