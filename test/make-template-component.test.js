@@ -1,46 +1,7 @@
-// import testData from '../data/test-data.js';
-// import makeHtmlTemplate from '../src/template-component.js';
+import makeHtmlTemplate from '../src/template-component.js';
 const test = QUnit.test;
 
 QUnit.module('template literal for news articles');
-
-export default function makeHtmlTemplate(exampleObject){
-    // clearRows();
-
-    const newsData = exampleObject.articles;
-    console.log(newsData);
-    // bag of dom
-    // newsData.forEach(newsData => {
-    const title = newsData[0].title;
-    console.log(title);
-    const author = newsData[0].author;
-    const description = newsData[0].description;
-    const url = newsData[0].url;
-    const img = newsData[0].urlToImage;
-    const published = newsData[0].publishedAt;
-
-    const html = /*html*/`
-        <li>
-            <h2>${title}</h2>
-            <h3>Author: ${author}</h3>
-            <h4>Published: ${published}</h4>
-            <img src="${img}">
-            <p>${description}</p>
-            <a href="${url}">Read More</a>
-        </li>
-        `;
-        
-        // newsList.appendChild(dom);
-        
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    // testData is good and template.content is good here
-    return template.content;
-    // });
-
-    // this function doesn't return anything
-    
-}
 
 
 test('set up basic template literal', assert => {
