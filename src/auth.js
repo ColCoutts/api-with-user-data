@@ -10,7 +10,7 @@ ui.start('#firebaseui-auth-container', {
     signInOptions: [
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        firebase.auth.GithubAuthProvider.PROVIDER_ID
+        firebase.auth.GithubAuthProvider.PROVIDER_ID,
     ],
 
     signInSuccessUrl: './' + window.location.hash,
