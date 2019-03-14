@@ -11,20 +11,20 @@
     <link rel="stylesheet" type="text/css" href="./src/index.css">
 </head>
 <body>
-    <header>
-        <section id="header-container">
+    <div id="header-container"></div>
+
+        <section id="search-container">
             <h1>Culture Vulture</h1>
             <form id="form">
                 <input type="text" id="search" name="name" placeholder="search here">
                 <button>SEARCH</button>
             </form>
+            <section id="paging-buttons-container" class="hidden">
+                <button id="previous-button">Previous</button>
+                <p>Page <span id="current-page">1</span> of <span id="total-pages">100</span></p>
+                <button id="next-button">Next</button>
+            </section>
         </section>
-        <section id="paging-buttons-container" class="hidden">
-            <button id="previous-button">Previous</button>
-            <p>Page <span id="current-page">1</span> of <span id="total-pages">100</span></p>
-            <button id="next-button">Next</button>
-        </section>
-    </header>
     <main>
         <section id="results-container">
             <ul id="news-list"></ul>

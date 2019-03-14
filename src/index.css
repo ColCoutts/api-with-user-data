@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-header {
+main {
     background: pink;
     display: flex;
     flex-direction: column;
@@ -11,24 +11,27 @@ header {
     height: 15em;
 }
 
-#header-container {
+#search-container {
+    background: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     height: 10em;
     width: 100%;
-    margin-top: 1em;
+    padding: 50px;
+    /* margin-top: 1em; */
 }
 
-#header-container h1 {
+main h1 {
     /* display: flex; */
     align-self: flex-start;
+    border: 2px solid black;
     margin-bottom: 100px;
     margin-left: 10px;
 }
 
-#header-container button {
+#search-container button {
     height: 40px;
     width: 6em;
     border-radius: 5px;
@@ -46,14 +49,13 @@ input {
     padding-top: -100px;
     /* padding: 0 5px 0 5px; */
     font-size: 1em;
-    
-    
 }
 
 #paging-buttons-container {
+    border: 2px solid black;
     display: flex;
-    height: 5em;
-    width: 25%;
+    height: 40px;
+    width: 40%;
     justify-content: space-around;
     align-items: center;
 }
