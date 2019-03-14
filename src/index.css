@@ -17,12 +17,19 @@ header {
     align-items: center;
     justify-content: space-around;
     height: 10em;
-    width: 50%;
+    width: 100%;
     margin-top: 1em;
 }
 
+#header-container h1 {
+    /* display: flex; */
+    align-self: flex-start;
+    margin-bottom: 100px;
+    margin-left: 10px;
+}
+
 #header-container button {
-    height: 4em;
+    height: 40px;
     width: 6em;
     border-radius: 5px;
 }
@@ -34,9 +41,10 @@ input {
     /* background-color: rgba(0, 0, 0, .5); */
     border-bottom: 2px dotted black;
     width: 20em;
-    height: 4em;
+    height: 20px;
     text-align: center;
-    padding: 0 5px 0 5px;
+    padding-top: -100px;
+    /* padding: 0 5px 0 5px; */
     font-size: 1em;
     
     
@@ -82,4 +90,8 @@ input {
 
 .hidden {
     visibility: hidden;
+}
+
+main {
+    margin-bottom: 75px;
 }

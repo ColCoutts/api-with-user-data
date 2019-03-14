@@ -4,7 +4,7 @@ import { readFromQuery } from '../src/hash-query.js';
 import makeSearchUrl from '../src/make-search-url.js';
 
 const buttonsContainer = document.getElementById('paging-buttons-container');
-console.log(buttonsContainer);
+
 window.addEventListener('hashchange', () => {
     const query = window.location.hash.slice(1);
     const queryOptions = readFromQuery(query);
