@@ -1,5 +1,5 @@
-import loadHeader from '../src/header-component.js';
-import { auth, usersRef } from '../src/firebase.js';
+import loadHeader from './header-component.js';
+import { auth, usersRef } from './firebase.js';
 
 const options = { skipAuth: true };
 loadHeader(options);
