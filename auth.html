@@ -11,11 +11,22 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-database.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
 
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"/>
 
 </head>
 <body>
-    <div id="header-container"></div>
+    <div id="header-container">
+        <header>
+            <img src="./assets/alchemy-logo.png" alt="alchemy logo">
+            <h1 class="header-logo">Favorite News</h1>
+        </header>
+        <div class="profile">
+            <img src="./assets/default-avatar.png" alt="avatar image">
+            <span>Colin Coutts</span>
+            <button>Sign Out</button>
+        </div>
+    </div>
 
     <main>
         <p>Track your News Articles</p>
