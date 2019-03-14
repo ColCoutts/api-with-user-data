@@ -26,6 +26,7 @@ test('set up basic template literal', assert => {
     //act
     const expected = /*html*/`
         <li>
+            <span class="favorite">☆</span>
             <h2>Coinbase users can now withdraw Bitcoin SV following BCH fork</h2>
             <h3>Author: Romain Dillet</h3>
             <h4>Published: 2019-02-15T14:53:40Z</h4>

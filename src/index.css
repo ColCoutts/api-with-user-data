@@ -117,3 +117,10 @@ h1.header-title {
     border-radius: 100%;
     margin-right: 5px;
 }
+
+li .favorite {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    user-select: none;
+}
