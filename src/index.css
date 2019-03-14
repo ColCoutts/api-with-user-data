@@ -95,3 +95,9 @@ input {
 main {
     margin-bottom: 75px;
 }
+
+header, .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
