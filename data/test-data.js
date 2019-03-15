@@ -263,4 +263,4 @@ export default {
             'content': 'Blockchain has a new unexpected hero: Twitters Jack Dorsey.\r\nAlthough up until recently the cryptocurrency community would routinely grill Dorsey over Twitters notorious Bitcoin giveaway scam epidemic, the micro-blogging services chief has found a new fandom … [+6397 chars]'
         }
     ]
-}
+};
