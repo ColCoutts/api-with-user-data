@@ -13,7 +13,7 @@ test('test name', assert => {
 
 //act
     
-    const expected = 'https://newsapi.org/v2/everything?apiKey=10be6d71ce6743c181958397919787bb&q=bitcoin&page=4&size=20';
+    const expected = 'https://newsapi.org/v2/everything?apiKey=fe8feee93ea24618b1e7e7e1a98661e6&q=bitcoin&page=4&size=20';
     const result = makeSearchUrl(queryOptions);
 
 //assert
