@@ -1,6 +1,6 @@
 export default function makeSearchUrl(queryOptions){
     const SEARCH_NEWS_URL = 'https://newsapi.org/v2/everything?';
-    const API_KEY = '10be6d71ce6743c181958397919787bb';
+    const API_KEY = 'fe8feee93ea24618b1e7e7e1a98661e6';
     
     if(!queryOptions.searchTerm){
         return '';
