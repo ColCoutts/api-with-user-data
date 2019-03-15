@@ -63,15 +63,13 @@ export default function makeHtmlTemplate(exampleObject){
 
 }
 
-//note the userFavoritesArticleRef (line 47 down if render has issues)
 export function updateNews(articles) {
     clearRows();
-    const articleArray = articles.articles;
+    
+    const articleArray = articles;
     articleArray.forEach(article => {
         const dom = makeHtmlTemplate(article);
-        console.log(dom);
         const favoriteStar = dom.querySelector('.favorite-star');
-        console.log
         const userId = auth.currentUser.uid;
         const userFavoritesRef = favoritesByUserRef.child(userId);
         const userFavoriteArticleRef = userFavoritesRef.child(article.publishedAt);
@@ -99,7 +97,6 @@ export function updateNews(articles) {
                 }
 
                 favoriteStar.addEventListener('click', () => {
-                    console.log('hey');
                     if(isFavorite) {
                         userFavoriteArticleRef.remove();
                         removeFavorite();

@@ -1,11 +1,13 @@
+import convertObjectToArray from '../src/convert-object-to-array.js';
+
 const test = QUnit.test;
 
 QUnit.module('convert object to array');
 
-function makeObjectToArray(object){
-    const keys = Object.keys(object);
-    return keys.map(key => object[key]);
-}
+// function makeObjectToArray(object){
+//     const keys = Object.keys(object);
+//     return keys.map(key => object[key]);
+// }
 
 test('object to array function', assert => {
     //arrange
@@ -38,7 +40,7 @@ test('object to array function', assert => {
 
     //act
     const expected = [object.abc, object.def, object.hij];
-    const result = makeObjectToArray(object);
+    const result = convertObjectToArray(object);
 
     //assert
     assert.deepEqual(result, expected);

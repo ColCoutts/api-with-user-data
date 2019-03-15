@@ -32,7 +32,7 @@ function loadQuery() {
     fetch(url)
         .then(response => response.json())
         .then(newsList => {
-            updateNews(newsList);
+            updateNews(newsList.articles);
         });
 }
 
