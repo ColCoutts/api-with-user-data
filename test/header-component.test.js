@@ -11,7 +11,7 @@ test('template literal for header', assert => {
     const expected = /*html*/ `
         <header>
             <img src="./assets/alchemy-logo.png" alt="alchemy logo">
-            <h1 class="header-logo">Favorite News</h1>
+            <h1 class="header-logo">Culture Vulture</h1>
         </header>
     `;
 
