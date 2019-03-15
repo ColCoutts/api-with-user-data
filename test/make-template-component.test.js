@@ -17,7 +17,7 @@ test('set up basic template literal', assert => {
         };
 
 
-    //act
+    //acts
     const expected = /*html*/`
         <li>
             <span class="favorite-star">☆</span>
