@@ -118,7 +118,7 @@ h1.header-title {
     margin-right: 5px;
 }
 
-li .favorite {
+li .favorite-star {
     display: flex;
     cursor: pointer;
     justify-content: center;
